@@ -9,6 +9,7 @@
 import UIKit
 
 class ComidinhasTableViewCell: UITableViewCell {
+    @IBOutlet weak var labelTituloRestaurante: UILabel!
     @IBOutlet weak var imageViewComida: UIImageView!
     @IBOutlet weak var labelTitulo: UILabel!
     @IBOutlet weak var labelCalorias: UILabel!

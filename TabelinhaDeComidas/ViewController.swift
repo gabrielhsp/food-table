@@ -57,6 +57,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "comidinhasCell") as! ComidinhasTableViewCell
         let cellData = arrayDeComidas[indexPath.row]
         
+        cell.labelTituloRestaurante.text = "Restaurante: \(cellData.nomeDoRestaurante ?? "")"
         cell.labelTitulo.text = cellData.nomeDaComida
         cell.labelCalorias.text = "Calorias: \(cellData.calorias ?? 0)"
         cell.imageViewComida.image = UIImage(named: cellData.imagem!)
@@ -67,6 +68,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     // Here we add the height of our TableCellView
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 139
+        return 188
     }
 }
