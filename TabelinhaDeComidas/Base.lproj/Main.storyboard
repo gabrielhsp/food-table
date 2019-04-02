@@ -19,32 +19,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y2O-8Z-Ovv">
-                                <rect key="frame" x="0.0" y="129" width="320" height="439"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YFR-4f-UBb" customClass="ComidinhasTableViewCell" customModule="TabelinhaDeComidas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YFR-4f-UBb" id="iFQ-Ej-UmL">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdk-pG-oLy">
-                                <rect key="frame" x="0.0" y="20" width="320" height="93"/>
-                                <color key="backgroundColor" red="0.39150054499999998" green="0.37300813710000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="93" id="QwG-ac-lku"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qdk-pG-oLy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rjc-bB-XU1"/>
-                            <constraint firstItem="Qdk-pG-oLy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YgI-wM-TBc"/>
-                            <constraint firstItem="Qdk-pG-oLy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aRa-r5-BYX"/>
-                            <constraint firstItem="Y2O-8Z-Ovv" firstAttribute="top" secondItem="Qdk-pG-oLy" secondAttribute="bottom" constant="16" id="bvt-vY-QRV"/>
-                            <constraint firstItem="Y2O-8Z-Ovv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cIJ-aH-PQ2"/>
-                            <constraint firstItem="Qdk-pG-oLy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="j1J-Ww-Lb9"/>
-                            <constraint firstItem="Qdk-pG-oLy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qbk-ee-rUu"/>
-                            <constraint firstItem="Qdk-pG-oLy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tn7-pg-yRU"/>
-                            <constraint firstItem="Y2O-8Z-Ovv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAK-ng-uTR"/>
-                            <constraint firstItem="Y2O-8Z-Ovv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yG5-tY-i0g"/>
+                            <constraint firstItem="Y2O-8Z-Ovv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Il-fz-ove"/>
+                            <constraint firstItem="Y2O-8Z-Ovv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Uv-XX-gGf"/>
+                            <constraint firstItem="Y2O-8Z-Ovv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RSp-2T-xbT"/>
+                            <constraint firstItem="Y2O-8Z-Ovv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wjh-WM-UEd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

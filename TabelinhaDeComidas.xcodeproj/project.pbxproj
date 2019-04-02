@@ -16,6 +16,8 @@
 		B86E621F225393180066C852 /* TabelinhaDeComidasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86E621E225393180066C852 /* TabelinhaDeComidasUITests.swift */; };
 		B86E622D2253933F0066C852 /* ProtocoloComidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86E622C2253933F0066C852 /* ProtocoloComidas.swift */; };
 		B86E622F225396DB0066C852 /* Comidas.json in Resources */ = {isa = PBXBuildFile; fileRef = B86E622E225396DB0066C852 /* Comidas.json */; };
+		B86E62382253C98C0066C852 /* ComidinhasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86E62362253C98C0066C852 /* ComidinhasTableViewCell.swift */; };
+		B86E62392253C98C0066C852 /* ComidinhasTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86E62372253C98C0066C852 /* ComidinhasTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		B86E6220225393180066C852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B86E622C2253933F0066C852 /* ProtocoloComidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocoloComidas.swift; sourceTree = "<group>"; };
 		B86E622E225396DB0066C852 /* Comidas.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Comidas.json; sourceTree = "<group>"; };
+		B86E62362253C98C0066C852 /* ComidinhasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidinhasTableViewCell.swift; sourceTree = "<group>"; };
+		B86E62372253C98C0066C852 /* ComidinhasTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComidinhasTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				B86E620A225393180066C852 /* Info.plist */,
 				B86E622C2253933F0066C852 /* ProtocoloComidas.swift */,
 				B86E622E225396DB0066C852 /* Comidas.json */,
+				B86E62362253C98C0066C852 /* ComidinhasTableViewCell.swift */,
+				B86E62372253C98C0066C852 /* ComidinhasTableViewCell.xib */,
 			);
 			path = TabelinhaDeComidas;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B86E62392253C98C0066C852 /* ComidinhasTableViewCell.xib in Resources */,
 				B86E622F225396DB0066C852 /* Comidas.json in Resources */,
 				B86E6209225393180066C852 /* LaunchScreen.storyboard in Resources */,
 				B86E6206225393180066C852 /* Assets.xcassets in Resources */,
@@ -265,6 +272,7 @@
 			files = (
 				B86E622D2253933F0066C852 /* ProtocoloComidas.swift in Sources */,
 				B86E6201225393170066C852 /* ViewController.swift in Sources */,
+				B86E62382253C98C0066C852 /* ComidinhasTableViewCell.swift in Sources */,
 				B86E61FF225393170066C852 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
