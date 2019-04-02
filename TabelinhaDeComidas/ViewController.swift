@@ -55,6 +55,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     // Here we return our ComidinhasTableViewCell.xib and convert him to ComidinhasTableViewCell swift type
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "comidinhasCell") as! ComidinhasTableViewCell
+        let cellData = arrayDeComidas[indexPath.row]
+        
+        cell.labelTitulo.text = cellData.nomeDaComida
+        cell.labelCalorias.text = "Calorias: \(cellData.calorias ?? 0)"
+        cell.imageViewComida.image = UIImage(named: cellData.imagem!)
+        cell.textViewDescricao.text = cellData.descricaoDaComida
         
         return cell
     }
