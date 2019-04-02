@@ -34,11 +34,13 @@ struct AtributosDeComida: Decodable {
     var nomeDaComida: String?
     var calorias: Int?
     var descricaoDaComida: String?
+    var nomeDoRestaurante: String?
     var imagem: String?
     
     enum CodingKeys: String, CodingKey {
         case nomeDaComida = "nome"
         case calorias
+        case restaurante
         case descricaoDaComida = "descricao"
         case imagem
     }
@@ -48,6 +50,7 @@ struct AtributosDeComida: Decodable {
         
         nomeDaComida = try valores.decodeIfPresent(String.self, forKey: .nomeDaComida)
         calorias = try valores.decodeIfPresent(Int.self, forKey: .calorias)
+        nomeDoRestaurante = try valores.decodeIfPresent(String.self, forKey: .restaurante)
         descricaoDaComida = try valores.decodeIfPresent(String.self, forKey: .descricaoDaComida)
         imagem = try valores.decodeIfPresent(String.self, forKey: .imagem)
     }
